@@ -106,8 +106,8 @@ Results for method Newton:
   0.   1.   4.   9.
 ```
 №2
-```bash
-kostic@DESKTOP-4J5A7C7:~/fp/lab3$ dune exec bin/main.exe 0.5
+```
+~/fp/lab3$ dune exec bin/main.exe 0.5
 Usage: exit; <float> <float>
 Input next point or command:
 1 2
@@ -144,5 +144,5 @@ Results for method Newton:
   2.  2.9   4. 5.35   7.   9.
 Input next point or command:
 exit
-kostic@DESKTOP-4J5A7C7:~/fp/lab3$
+~/fp/lab3$
 ```
