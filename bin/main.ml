@@ -2,6 +2,14 @@ open Reader
 
 type config = { frec : float }
 
+let cfg =
+  match Array.length Sys.argv with
+  | 1 -> { frec = 1.0 }
+  | 2 -> { frec = Sys.argv.(1) |> float_of_string }
+  | _ ->
+      let _ = Printer.print_msg "one argument supported" in
+      exit 0
+
 let rec main_loop points_last cnt config =
   let _ = Printer.print_msg "Input next point or command:" in
   match read_command () with
@@ -31,5 +39,5 @@ let rec main_loop points_last cnt config =
       in
       main_loop points (cnt + 1) config
 
-let _ = Printer.print_msg "Usage: setFreq <float>; exit; <float> <float>"
-let _ = main_loop [] 0 { frec = 1.0 }
+let _ = Printer.print_msg "Usage: exit; <float> <float>"
+let _ = main_loop [] 0 cfg
