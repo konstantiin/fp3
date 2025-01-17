@@ -91,24 +91,24 @@ Results for method Newton:
 Input next point or command:
 1 1
 Results for method linear:
-  0.   1.
-  0.   1.
+  1.
+  1.
 Results for method Newton:
-  0.   1.
-  0.   1.
+  1.
+  1.
 Input next point or command:
 3 9
 Results for method linear:
-  1.   2.   3.
-  1.   5.   9.
+  2.   3.
+  5.   9.
 Results for method Newton:
-  0.   1.   2.   3.
-  0.   1.   4.   9.
+  2.   3.
+  4.   9.
 ```
 №2
 ```
 ~/fp/lab3$ dune exec bin/main.exe 0.5
-Usage: exit; <float> <float>
+Usage: setFreq <float>; exit; <float> <float>
 Input next point or command:
 1 2
 For linear method I need more points
@@ -118,30 +118,30 @@ Results for method Newton:
 Input next point or command:
 3 4
 Results for method linear:
-  1.  1.5   2.  2.5   3.
-  2.  2.5   3.  3.5   4.
+ 1.5   2.  2.5   3.
+ 2.5   3.  3.5   4.
 Results for method Newton:
-  1.  1.5   2.  2.5   3.
-  2.  2.5   3.  3.5   4.
+ 1.5   2.  2.5   3.
+ 2.5   3.  3.5   4.
 Input next point or command:
 5 7
 Results for method linear:
-  3.  3.5   4.  4.5   5.
-  4. 4.75  5.5 6.25   7.
+ 3.5   4.  4.5   5.
+4.75  5.5 6.25   7.
 Results for method Newton:
-  1.  1.5   2.  2.5   3.  3.5   4.  4.5   5.
-  2. 2.41 2.88 3.41   4. 4.66 5.38 6.16   7.
+ 3.5   4.  4.5   5.
+4.66 5.38 6.16   7.
 Input next point or command:
 setFreq 1
 frequency set
 Input next point or command:
 6 9
 Results for method linear:
-  5.   6.
-  7.   9.
+  6.
+  9.
 Results for method Newton:
-  1.   2.   3.   4.   5.   6.
-  2.  2.9   4. 5.35   7.   9.
+  6.
+  9.
 Input next point or command:
 exit
 ~/fp/lab3$
