@@ -81,6 +81,7 @@ let read_command =
 ## Пример
 №1
 ```
+$ dune exec bin/main.exe newton linear
 Usage: setFreq <float>; exit; <float> <float>
 Input next point or command:
 0 0
@@ -107,42 +108,51 @@ Results for method Newton:
 ```
 №2
 ```
-~/fp/lab3$ dune exec bin/main.exe 0.5
+~/fp/lab3$ ./_build/default/bin/main.exe -f 0.5 linear
 Usage: setFreq <float>; exit; <float> <float>
 Input next point or command:
-1 2
+1 1
 For linear method I need more points
-Results for method Newton:
-  1.
-  2.
 Input next point or command:
-3 4
+2 2
 Results for method linear:
- 1.5   2.  2.5   3.
- 2.5   3.  3.5   4.
-Results for method Newton:
- 1.5   2.  2.5   3.
- 2.5   3.  3.5   4.
+  1.  1.5   2.
+  1.  1.5   2.
 Input next point or command:
-5 7
+3 3
 Results for method linear:
- 3.5   4.  4.5   5.
-4.75  5.5 6.25   7.
-Results for method Newton:
- 3.5   4.  4.5   5.
-4.66 5.38 6.16   7.
-Input next point or command:
-setFreq 1
-frequency set
-Input next point or command:
-6 9
-Results for method linear:
-  6.
-  9.
-Results for method Newton:
-  6.
-  9.
+ 2.5   3.
+ 2.5   3.
 Input next point or command:
 exit
 ~/fp/lab3$
+```
+№3
+
+```
+~/fp/fp3$ ./_build/default/bin/main.exe -f 0.7 linear
+Usage: setFreq <float>; exit; <float> <float>
+Input next point or command:
+1 1
+For linear method I need more points
+Input next point or command:
+2 2
+Results for method linear:
+  1.  1.7  3.1
+  1.  1.7  3.1
+Input next point or command:
+4 4
+Results for method linear:
+ 3.8  5.2
+ 3.8  5.2
+Input next point or command:
+5 5
+Input next point or command:
+6 6
+Results for method linear:
+ 5.9  7.3
+ 5.9  7.3
+Input next point or command:
+exit
+~/fp/fp3$
 ```

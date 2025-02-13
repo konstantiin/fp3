@@ -37,6 +37,6 @@ let apply_data data =
     | Some d -> { name = "linear"; win_sz = 2; f = Some (linear d) }
   in
   let newt =
-    { name = "Newton"; win_sz = List.length data; f = Some (newton data) }
+    { name = "newton"; win_sz = List.length data; f = Some (newton data) }
   in
   [ lin; newt ]
